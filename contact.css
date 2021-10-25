@@ -1,0 +1,136 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+body {
+  background: rgb(34,31,59);
+  background: radial-gradient(circle, rgba(34,31,59,1) 0%, rgba(5,5,5,1) 100%);
+  overflow: hidden;
+  cursor: none;
+}
+.sectionContact{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layer, .layer1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+.layer1{
+  opacity: 0.9;
+}
+
+#cursor{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  transition: 0.1s;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  pointer-events: none;
+  background: linear-gradient(145deg, #ffffc8, #e1dda8);
+  box-shadow:  3px 3px 30px #d5cb85, -3px -3px 30px #ffffb5;
+  z-index: 800;
+}
+
+form:hover ~ #cursor{
+  box-shadow:  6px 6px 12px #d5cb85, -6px -6px 12px #ffffb5;
+}
+
+.formCont{
+  display: flex;
+  width: 100%;
+  height: 93vh;
+  justify-content: center;
+  align-items: center;
+  cursor: none;
+}
+.formCont1{
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  z-index: 999;
+}
+.formCont1:hover{
+  background: rgba(255, 255, 255, 0.18);
+}
+.contactus{
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+}
+input{
+  height: 30px;
+  width: 100%;
+}
+input, textarea{
+  width: 100%;
+  color: rgb(34, 34, 34);
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  font-weight: 400;
+}
+input:hover, textarea:hover{
+  background: rgba(255, 255, 255, 0.18);
+}
+.input, .textarea, .email{
+    width: 400px;
+  }
+
+.btnmsj{
+  height: 50px;
+  width: 200px;
+  border: none;
+  color: #fff;
+  border-radius: 50px;
+  margin-top: 30px;
+  background: linear-gradient(90deg, #0162c8,#55e7fc);
+  font-weight: 900;
+}
+.btnmsj:hover{
+  background: rgb(142, 191, 211);
+}
+span{
+  position: absolute;
+  background: #fff;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: alternate 1s linear infinite;
+}
+@keyframes animate{
+  0%{
+    width: 0px;
+    height: 0px;
+  }
+  100%{
+    width: 50px;
+    height: 50px;
+  }
+}

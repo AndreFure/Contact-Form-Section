@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
+  <title>Contact</title>
+</head>
+
+<body>
+  <section class="sectionContact">
+    <img src="101.png" data-speed="-5" class="layer layer1">
+    <img src="102.png" data-speed="5" class="layer layer1">
+    <img src="103.png" data-speed="2" class="layer">
+    <img src="104.png" data-speed="6" class="layer layer1">
+    <img src="105.png" data-speed="8" class=" layer layer1">
+    <img src="106.png" data-speed="-2" class="layer">
+    <img src="107.png" data-speed="4" class="layer">
+    <img src="108.png" data-speed="-9" class="layer">
+    <img src="109.png" data-speed="6" class="layer">
+    <img src="110.png" data-speed="-7" class="layer">
+    <img src="111.png" data-speed="-5" class="layer">
+    <img src="112.png" data-speed="5" class="layer">
+    <div class="formCont">
+      <form enctype="text/plain" action="mailto:andresgenes@hotmail.com" class="formCont1" method="post"
+        data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+        <p class="contactus">Contactame</p>
+        <div class="input">
+          <input type="text" placeholder="Tu nombre" required>
+        </div>
+        <div class="email">
+          <input type="e-mail" placeholder="Tu correo" required>
+        </div>
+        <div class="textarea">
+          <textarea name="mensaje" id="" cols="30" rows="10" required
+            placeholder="Mensaje. Ejemplo: Hey, me interesa tu trabajo..!"></textarea>
+        </div>
+        <button class="btnmsj">ENVIAR MENSAJE</button>
+      </form>
+    </div>
+    <div id="cursor">
+    </div>
+  </section>
+  <video id="point" onloadedmetadata="this.muted=true" autoplay loop>
+    <source src="1.mp4">
+  </video>
+  <script src="contact.js"></script>
+</body>
+
+</html>
